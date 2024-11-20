@@ -18,14 +18,8 @@ function checkNumber() {
         document.querySelector(".message").innerHTML = "Start guessing.....";
         document.querySelector(".score").textContent = "Score: 20";
         document.querySelector(".high-score").textContent = "High Score: " + high_score;
-        
-        // Clear input field after winning
         document.querySelector(".guessedNumber").value = "";
-        
-        // Generate a new random number for the next round
         randomNumber = Math.floor(Math.random() * 20) + 1;
-        
-        // Reset score back to 20
         score = 20;
     }
     else if (userInput < randomNumber) {
@@ -44,8 +38,8 @@ function again() {
     high_score=0;
     document.querySelector(".message").innerHTML = "Start guessing.....";
     document.querySelector(".score").textContent = "Score: 20";
-    document.querySelector(".high-score").textContent = "High Score: " + high_score; // keep the high score intact
+    document.querySelector(".high-score").textContent = "High Score: " + high_score; 
     document.querySelector(".guessedNumber").value = "";  
     randomNumber = Math.floor(Math.random() * 20) + 1;
-    score = 20; // Reset score back to 20
+    score = 20; 
 }
